@@ -16,6 +16,16 @@ and applies minimal adjustments.
 
 ## Build Instructions
 
+1. **Install dependencies**
+    * Debian based:
+        ```bash
+        sudo apt install swi-prolog cmake build-essential gcc g++
+        ```
+    * Fedora:
+        ```bash
+        sudo dnf install swi-prolog cmake gcc g++
+        ```
+
 1. **Clone the repository**
 
    ```bash
