@@ -23,7 +23,7 @@ and applies minimal adjustments.
         ```
     * Fedora:
         ```bash
-        sudo dnf install swi-prolog cmake gcc g++
+        sudo dnf install swi-prolog-core cmake gcc g++
         ```
 
 1. **Clone the repository**
