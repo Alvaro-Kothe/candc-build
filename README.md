@@ -52,7 +52,7 @@ and applies minimal adjustments.
 
 5. **Move binaries close to models**
     ```bash
-    mc bin .. && cd ..
+    mv bin .. && cd ..
     ```
 
 ## Usage
