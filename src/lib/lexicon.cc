@@ -257,7 +257,7 @@ Lexicon::bcast(void){
 
 Word
 Lexicon::add(const string &str){
-  return Word(reinterpret_cast<ulong>(impl_->add(str)));
+  return Word(reinterpret_cast<uintptr_t>(impl_->add(str)));
 }
 
 void
@@ -272,7 +272,7 @@ Lexicon::insert(const string &str, ulong freq){
 
 Word
 Lexicon::can(const string &str) const {
-  return Word(reinterpret_cast<ulong>(impl_->find(str)));
+  return Word(reinterpret_cast<uintptr_t>(impl_->find(str)));
 }
 
 void
@@ -299,7 +299,7 @@ Lexicon::check(const string &str) const {
   if(!entry)
     throw Exception("the string '" + str + "' is not a member of " + impl_->name);
 
-  return Word(reinterpret_cast<ulong>(entry));
+  return Word(reinterpret_cast<uintptr_t>(entry));
 }
 
 ulong

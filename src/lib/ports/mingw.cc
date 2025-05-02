@@ -46,7 +46,7 @@ gettimes(Time &usr, Time &sys, Time &total){
 
 void
 make_directory(const std::string &dir){
-  if(_mkdir(dir.c_str()))
+  if(mkdir(dir.c_str()))
     if(errno == EEXIST)
       cerr << "using existing directory " << dir << endl;
     else
